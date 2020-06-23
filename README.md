@@ -1,4 +1,4 @@
-![](https://github.com/Ricardo/cicd/deploy/badge.svg?branch=master)
+![](https://github.com/RicardoHydra/cicd/deploy/badge.svg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
