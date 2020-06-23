@@ -18,14 +18,18 @@ jobs:
         node-version: [12.x]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v2.0.0
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: install dependencies
+        uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v2.0.0
+      - name: run tests
+        uses: borales/actions-yarn@v2.0.0
         with:
           cmd: test # will run `yarn test` command
-      - uses: borales/actions-yarn@v2.0.0
+      - name: run build
+        uses: borales/actions-yarn@v2.0.0
         with:
           cmd: build # will run `yarn build` command
 
